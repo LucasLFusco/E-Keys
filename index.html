@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/Ekeys.ico" type="image/x-icon">
 </head>
+
 <body>
     <nav>
         <ul class="nav-lista">
@@ -18,10 +20,7 @@
         </ul>
     </nav>
 
-
-
-
-
+        <!-- BOX Dos Serviços -->
     <ul class="sistemas">
         <li class="box">
             <img src="img/security-alert.jpg" alt="Imagem 1" />
@@ -53,5 +52,38 @@
             <p class="desc">Gestão de Incidentes de Segurança</p>
             <button class="botao">Contratar</button>
         </li>
+    </ul>
+
+<!-- POP-UP -->
+<!-- POP-UP -->
+<div class="popup-overlay" id="popup">
+    <div class="popup-content">
+        <span class="close-popup" id="close-popup">&times;</span>
+        <div class="popup-left">
+            <h2 id="service-title">Título do Serviço</h2>
+            <div class="service-description">
+                <p>Descrição do serviço.</p>
+            </div>
+        </div>
+        <div class="popup-right">
+            <div class="price">
+                <p>Preço: <span>R$ 00,00/h</span></p>
+            </div>
+            <hr>
+            <strong>Agendamento</strong>
+            <div class="agendamento-details">
+                <p>Data: <span>DD/MM/AAAA</span></p>
+                <p>Início: <span>HH:MM</span></p>
+                <p>Fim: <span>HH:MM</span></p>
+            </div>
+            <button id="agendar-button">Agendar</button>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="script/js.js"></script>
 </body>
+
 </html>
