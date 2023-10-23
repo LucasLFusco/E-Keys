@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(360deg,#2e2626, rgb(179, 173, 173), #2e2626);
+}
+
+/* NAV */
+nav{
+    background-color: black;
+    color: #5fc808;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: none;
+    padding: 0;
+}
+.logo {       /*Logo E-Keys*/
+    width: 60px;
+}
+
+.nav-lista{
+    width: 100vw;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-itens{
+    text-align: center;
+    padding: 0 30px;
+}
+
+nav > ul > li:last-child {
+    margin-right: 0;
+}
+
+.sair{          /*Logo Sair*/
+    width: 29px;
+    margin-right: 20px;
+}
+
+
+
+/* SERVIÇOS */
+.sistemas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.box {
+    width: 30%;
+    margin: 10px 0;
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box img {
+    border-radius: 20px;
+}
+
+.desc {
+    font-weight: bolder;
+    margin: 10px auto;
+    flex-grow: 1;
+}
+
+.botao {
+    background-color: black;
+    color: white;
+    border: none;    
+    border-radius: 20px;
+    padding: 10px 0;
+    font-size: 16px;
+    width: 50%;
+    margin: auto;
+}
+
+
+
+/* MIDIA  */
+@media (max-width:500px) {
+    
+    .nav-itens{
+        padding: 0px 5px;
+    }
+    .box{
+        width: 100%;
+        margin: 10px auto;
+    }
+    .sair{
+        width: 29px;
+        margin: 0;
+    }
+}
