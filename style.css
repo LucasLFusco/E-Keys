@@ -126,9 +126,12 @@ nav > ul > li:last-child {
     margin-bottom: 10px;
 }
 
-#service-description {
+.service-description {
     font-size: 16px;
+    text-align: justify;
 }
+
+
 /* Adicione estilos CSS para a estrutura do pop-up */
 .popup-content {
     display: flex;
@@ -165,7 +168,9 @@ strong {
 .agendamento-details p {
     margin: 5px 0;
 }
-
+.agendamento-details .agendamento-date {
+    margin: 5px 0;
+}
 #agendar-button {
     background-color: #007BFF;
     color: white;
